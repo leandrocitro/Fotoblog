@@ -25,6 +25,19 @@ header {
 
 }
 
+header a {
+    color: #8D8D99;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration: none;
+} 
+
+header a:hover {
+    color: #202024;
+    
+}
+
 header .icone {
     width: 35px;
     height: 27px;
@@ -35,10 +48,6 @@ header .perfil {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-}
-
-header p:hover {
-    color: #202024;
 }
 
 header input {
