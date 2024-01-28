@@ -8,11 +8,17 @@
 
 :root {
     font-size: 62.5%;
+
+    --color-base-white: #ffffff;
+    --color-base-gray-100: #F5F5F5;
+    --color-base-gray-300: #8d8d99;
+    --color-base-gray-900: #202024;
+
 }
 
-body {
+:root, body {
     font-family: 'Mulish', sans-serif;
-    background-color: #F5F5F5;
+    
 }
 
 #app {
@@ -23,10 +29,6 @@ body {
 
 }
 
-#app > * {
-    border: 1px solid red;
-    
-}
 
 .container {
     padding: 1.6rem 3.2rem;
@@ -34,21 +36,34 @@ body {
     margin: 0 auto;
 }
 
+#container_cards {
+    display: grid;
+    padding-top: 90px;
+    padding-bottom: 65px;
+
+    grid-template-columns: repeat(3, 390px);
+    gap: 23px 23px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
 header {
     display: flex;
+    align-items: center;
+    gap: 7.2rem;
     height: 80px;
-    padding-left: 100px;
-    padding-right: 90px;
-    background-color: #FFF;
-
+    background-color: var(--color-base-white);
+    
     color: #8D8D99;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 28px;
-    align-items: center;
+    
     justify-content: space-between;
 
-}
+} 
 
 header a {
     color: #8D8D99;
@@ -63,10 +78,10 @@ header a:hover {
     
 }
 
-header .icone {
+header .logo {
     width: 35px;
     height: 27px;
-    flex-shrink: 0;
+        
 }
 
 header .perfil {
@@ -75,9 +90,9 @@ header .perfil {
     border-radius: 50%;
 }
 
-header input {
+header form input {
     height: 48px;
-    width: 718px;
+    flex: 1;
     background-color: #F5F5F5;
 
     border-radius: 5px;
@@ -94,16 +109,8 @@ header input {
 }
 
 main {
-    background-color: #F5F5F5;
-    display: grid;
-    padding-top: 90px;
-    padding-bottom: 65px;
-
-    grid-template-columns: repeat(3, 390px);
-    gap: 23px 23px;
-
-    align-items: center;
-    justify-content: center;
+    background-color: var(--color-base-gray-100);
+    overflow: scroll; 
 }
 
 .card {
@@ -148,4 +155,4 @@ footer {
 
 footer p {
     font-style: bold;
-}
+} 
