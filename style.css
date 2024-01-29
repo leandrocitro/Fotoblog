@@ -87,6 +87,7 @@ header .logo {
 header .perfil {
     width: 42px;
     height: 42px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -155,4 +156,7 @@ footer {
 
 footer p {
     font-style: bold;
+    font-size: 1.6rem;
+    padding: 20px;
+    font-weight: 600;
 } 
