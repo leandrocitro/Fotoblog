@@ -38,14 +38,13 @@
 
 #container_cards {
     display: grid;
-    padding-top: 90px;
+    padding-top: 3.2rem;
     padding-bottom: 65px;
 
     grid-template-columns: repeat(3, 390px);
     gap: 23px 23px;
 
-    align-items: center;
-    justify-content: center;
+   
 }
 
 
@@ -113,6 +112,13 @@ main {
     background-color: var(--color-base-gray-100);
     overflow: scroll; 
 }
+
+main h1 {
+    padding-top: 1.6rem;
+    font-size: 2.4rem;
+}
+
+
 
 .card {
     display: flex;
