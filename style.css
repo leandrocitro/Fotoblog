@@ -133,6 +133,7 @@ main h1 {
 
 .card img {
     margin-bottom: 23px;
+    object-fit: cover;
 
 }
 
