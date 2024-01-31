@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
 }
 
 :root {
@@ -16,9 +16,10 @@
 
 }
 
-:root, body {
+:root,
+body {
     font-family: 'Mulish', sans-serif;
-    
+
 }
 
 #app {
@@ -44,7 +45,7 @@
     grid-template-columns: repeat(3, 390px);
     gap: 23px 23px;
 
-   
+
 }
 
 
@@ -54,15 +55,15 @@ header {
     gap: 7.2rem;
     height: 80px;
     background-color: var(--color-base-white);
-    
+
     color: #8D8D99;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 28px;
-    
+
     justify-content: space-between;
 
-} 
+}
 
 header a {
     color: #8D8D99;
@@ -70,17 +71,17 @@ header a {
     font-weight: 700;
     line-height: 2.8rem;
     text-decoration: none;
-} 
+}
 
 header a:hover {
     color: #202024;
-    
+
 }
 
 header .logo {
     width: 35px;
     height: 27px;
-        
+
 }
 
 header .perfil {
@@ -88,6 +89,13 @@ header .perfil {
     height: 42px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+header .perfil:hover {
+    filter: hue-rotate(7deg) contrast(80%) saturate(150%);
+    transform: scale(1.1) rotate(0deg);
+
+
 }
 
 header form input {
@@ -110,7 +118,7 @@ header form input {
 
 main {
     background-color: var(--color-base-gray-100);
-    overflow: scroll; 
+    overflow: scroll;
 }
 
 main h1 {
@@ -129,16 +137,31 @@ main h1 {
     border-radius: 7px;
     background: #FFF;
     overflow: hidden;
+
+
 }
 
 .card img {
     margin-bottom: 23px;
     object-fit: cover;
 
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-delay: 0;
+    transition-timing-function: ease-out;
+
+
+}
+
+.card img:hover {
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(0deg);
+
 }
 
 .card h1 {
     margin-left: 23px;
+
 
 }
 
@@ -166,4 +189,4 @@ footer p {
     font-size: 1.6rem;
     padding: 20px;
     font-weight: 600;
-} 
+}
